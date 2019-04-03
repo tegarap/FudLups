@@ -1096,7 +1096,9 @@ id barrier
 id beginning
 id blocking
 id bottom
+id bt_min
 id bt_order
+id bt_plus
 id btn_backtomenu
 id btn_login
 id buttonPanel
@@ -1274,6 +1276,7 @@ id tv_namabarang
 id tv_name
 id tv_price
 id tv_stock
+id tv_stock2
 id uniform
 id unlabeled
 id up
@@ -1347,6 +1350,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_account
+layout fragment_popup_order
 layout fragment_report
 layout fragment_store
 layout item_list
@@ -1367,7 +1371,6 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout popup_pesan
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

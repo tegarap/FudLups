@@ -20,7 +20,7 @@ import com.tegarap.fudlups.rest.InterfacePoint
 import com.tegarap.fudlups.viewholder.ListItemVH
 import kotlinx.android.synthetic.main.fragment_store.*
 import kotlinx.android.synthetic.main.item_list.*
-import kotlinx.android.synthetic.main.popup_pesan.*
+import kotlinx.android.synthetic.main.fragment_popup_order.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
