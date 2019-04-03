@@ -30,6 +30,7 @@
             <Button
                     android:id="@+id/bt_pesan"
                     android:text="pesan"
+
                     android:textColor="@color/bg_base"
                     android:background="@color/greenPastel"
                     android:layout_gravity="end"
