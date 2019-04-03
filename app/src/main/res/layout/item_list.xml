@@ -30,7 +30,7 @@
                     android:id="@+id/tv_stock"
                     android:layout_width="match_parent" android:layout_height="wrap_content"/>
             <Button
-                    android:id="@+id/bt_pesan"
+                    android:id="@+id/bt_order"
                     android:text="pesan"
                     android:textColor="@color/colorNew"
                     android:background="@drawable/bt_pesan"

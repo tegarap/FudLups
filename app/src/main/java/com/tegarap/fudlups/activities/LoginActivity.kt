@@ -37,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
 //        actionBar!!.hide()
 //    }
 
-    fun login() {
+    private fun login() {
         iPoint.login(et_email.text.toString(), et_password.text.toString()).enqueue(object : Callback<UserResponse> {
             override fun onFailure(call: Call<UserResponse>, t: Throwable) {
                 Snackbar.make(btn_login, "No Response", Snackbar.LENGTH_LONG)

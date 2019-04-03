@@ -1096,7 +1096,8 @@ id barrier
 id beginning
 id blocking
 id bottom
-id bt_pesan
+id bt_order
+id btn_backtomenu
 id btn_login
 id buttonPanel
 id cancel_action
@@ -1131,6 +1132,7 @@ id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id et_email
+id et_note
 id et_password
 id et_pencarian
 id exitUntilCollapsed
@@ -1268,6 +1270,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_namabarang
 id tv_name
 id tv_price
 id tv_stock
@@ -1364,6 +1367,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout popup_pesan
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

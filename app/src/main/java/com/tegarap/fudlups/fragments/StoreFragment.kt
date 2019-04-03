@@ -1,5 +1,6 @@
 package com.tegarap.fudlups.fragments
 
+import android.app.Dialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -18,6 +19,8 @@ import com.tegarap.fudlups.rest.EndPoint
 import com.tegarap.fudlups.rest.InterfacePoint
 import com.tegarap.fudlups.viewholder.ListItemVH
 import kotlinx.android.synthetic.main.fragment_store.*
+import kotlinx.android.synthetic.main.item_list.*
+import kotlinx.android.synthetic.main.popup_pesan.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -36,7 +39,9 @@ class StoreFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_store, container, false)
 
+
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
