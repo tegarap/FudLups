@@ -11,8 +11,8 @@ class ListItemVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(data : ListItem){
 
         itemView.tv_name?.text = data.name
-        itemView.tv_barcode?.text = data.barcode
-        itemView.tv_price?.text = data.price
+        itemView.tv_stock?.text = "Stock : "+data.quantity
+        itemView.tv_price?.text = "Rp. "+data.price
 
         itemView.iv_product?.apply {
 

@@ -57,7 +57,7 @@ class StoreFragment : Fragment() {
         rv_list_item?.apply {
             adapter = listAdapter
             layoutManager = LinearLayoutManager(context)
-            addItemDecoration(VerticalSpaceItem(context, 10f, 16f))
+            addItemDecoration(VerticalSpaceItem(context, 5f, 2f))
         }
 
         EndPoint.client.create(InterfacePoint::class.java).listItem().enqueue(object : Callback<ListItemResponse> {

@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             xmlns:tools="http://schemas.android.com/tools"
-                                             android:layout_width="match_parent"
-                                             android:layout_height="match_parent"
-                                             android:background="@android:color/holo_red_dark"
-                                             tools:context=".fragments.StoreFragment">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_base"
+              tools:context=".fragments.StoreFragment">
 
+    <EditText android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:id="@+id/et_pencarian"
+              android:hint="search"
+              android:textColorHint="@color/fontForm"
+              android:layout_marginTop="3dp"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="5dp"
+              android:drawableStart="@drawable/ic_search"
+              android:drawablePadding="10dp"
+              android:background="@drawable/et_pencarian"/>
     <android.support.v7.widget.RecyclerView
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:background="@color/bg_base"
@@ -14,4 +26,4 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
     />
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

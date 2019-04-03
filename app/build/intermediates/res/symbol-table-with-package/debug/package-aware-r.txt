@@ -1021,6 +1021,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable bt_pesan
 drawable btn_bg
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -1029,6 +1030,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable et_bg
+drawable et_pencarian
 drawable ic_account
 drawable ic_email
 drawable ic_launcher_background
@@ -1038,6 +1040,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_password
 drawable ic_report
+drawable ic_search
 drawable ic_store
 drawable logo
 drawable mtrl_snackbar_background
@@ -1129,6 +1132,7 @@ id enterAlways
 id enterAlwaysCollapsed
 id et_email
 id et_password
+id et_pencarian
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1264,9 +1268,9 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
-id tv_barcode
 id tv_name
 id tv_price
+id tv_stock
 id uniform
 id unlabeled
 id up
