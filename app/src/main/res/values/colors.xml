@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303FFF</color>
+    <color name="colorPrimary">#4793ff</color>
+    <color name="colorPrimaryDark">#FF5722</color>
     <color name="colorAccent">#FF4081</color>
     <color name="bg_base">#EFF5FF</color>
     <color name="greenPastel">#3cd3ad</color>
@@ -28,4 +28,5 @@
     <color name="colorborder">#757575</color>
     <color name="colorBackgroundLoginRegister">#FFEFECEC</color>
     <color name="colorFontBaru">#FF000000</color>
+    <color name="colorpesan">#ffb347</color>
 </resources>

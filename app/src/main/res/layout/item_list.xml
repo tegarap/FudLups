@@ -31,7 +31,7 @@
                     android:id="@+id/bt_pesan"
                     android:text="pesan"
                     android:textColor="@color/bg_base"
-                    android:background="@color/greenPastel"
+                    android:background="@color/colorpesan"
                     android:layout_gravity="end"
                     android:layout_width="wrap_content" android:layout_height="match_parent"/>
         </LinearLayout>
