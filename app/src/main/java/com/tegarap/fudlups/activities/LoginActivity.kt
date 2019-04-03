@@ -24,7 +24,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        setupToolbar()
+//        setupToolbar()
 
         iPoint = EndPoint.client.create(InterfacePoint::class.java)
         btn_login.setOnClickListener {
@@ -32,10 +32,10 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupToolbar() {
-        val actionBar = supportActionBar
-        actionBar!!.hide()
-    }
+//    private fun setupToolbar() {
+//        val actionBar = supportActionBar
+//        actionBar!!.hide()
+//    }
 
     fun login() {
         iPoint.login(et_email.text.toString(), et_password.text.toString()).enqueue(object : Callback<UserResponse> {

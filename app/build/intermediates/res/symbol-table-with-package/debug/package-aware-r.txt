@@ -1029,11 +1029,13 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable et_bg
 drawable ic_account
+drawable ic_email
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_password
 drawable ic_report
 drawable ic_store
 drawable logo
@@ -1140,8 +1142,6 @@ id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
-id guideline_left
-id guideline_right
 id home
 id homeAsUp
 id icon
@@ -1158,9 +1158,9 @@ id largeLabel
 id left
 id line1
 id line3
+id link_signup
 id listMode
 id list_item
-id logo
 id masked
 id media_actions
 id message
@@ -1266,8 +1266,6 @@ id transition_transform
 id tv_barcode
 id tv_name
 id tv_price
-id txt_create_account
-id txt_forgot_password
 id uniform
 id unlabeled
 id up
