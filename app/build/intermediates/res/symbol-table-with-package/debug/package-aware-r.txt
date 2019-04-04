@@ -1030,6 +1030,8 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable et_bg
+drawable et_bg_email
+drawable et_bg_password
 drawable et_pencarian
 drawable ic_account
 drawable ic_email
@@ -1102,6 +1104,7 @@ id bt_min
 id bt_order
 id bt_plus
 id btn_login
+id button
 id buttonPanel
 id cancel_action
 id center

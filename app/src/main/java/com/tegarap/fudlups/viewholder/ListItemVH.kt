@@ -31,30 +31,29 @@ class ListItemVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
             val dialog = Dialog(itemView.context)
             dialog.setContentView(R.layout.fragment_popup_order)
-            dialog.tv_namabarang?.text = data.name
+            dialog.tv_namabarang?.text = data.name + "  Rp. " + data.price
+            val quan = Integer.parseInt(data.price.toString())
 
             dialog.bt_min?.setOnClickListener {
                 val number = Integer.parseInt(dialog.tv_stock2.text.toString()) - 1
                 if(number < 1){
                     dialog.bt_min.isEnabled = false
+                    dialog.bt_keranjang.setVisibility(View.GONE)
+                    dialog.bt_backtomenu.setVisibility(View.VISIBLE)
                 }
+                dialog.bt_keranjang.text = "Add to Box - Rp. " + quan * number
                 dialog.tv_stock2.text = number.toString()
             }
             dialog.bt_plus?.setOnClickListener {
                 val number = Integer.parseInt(dialog.tv_stock2.text.toString()) + 1
+
                 if(number >= 1){
                     dialog.bt_min.isEnabled = true
+                    dialog.bt_backtomenu.setVisibility(View.GONE)
+                    dialog.bt_keranjang.setVisibility(View.VISIBLE)
+                    dialog.bt_keranjang.text = "Add to Box - Rp. " + quan * number
                 }
                 dialog.tv_stock2.text = number.toString()
-            }
-
-            val number = Integer.parseInt(dialog.tv_stock2.text.toString())
-            if (number < 1) {
-                dialog.bt_keranjang.setVisibility(View.GONE)
-                dialog.bt_backtomenu.setVisibility(View.VISIBLE)
-            }else if(number >= 1){
-                dialog.bt_backtomenu.setVisibility(View.GONE)
-                dialog.bt_keranjang.setVisibility(View.VISIBLE)
             }
 
             dialog.show()
