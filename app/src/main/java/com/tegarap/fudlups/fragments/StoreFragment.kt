@@ -19,11 +19,12 @@ import com.tegarap.fudlups.rest.EndPoint
 import com.tegarap.fudlups.rest.InterfacePoint
 import com.tegarap.fudlups.viewholder.ListItemVH
 import kotlinx.android.synthetic.main.fragment_store.*
-import kotlinx.android.synthetic.main.item_list.*
-import kotlinx.android.synthetic.main.fragment_popup_order.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+
+
+
 
 class StoreFragment : Fragment() {
     companion object {
@@ -37,15 +38,27 @@ class StoreFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_store, container, false)
 
 
     }
 
+    fun ngaleh(){
+        val fragmentCheckout = Checkout()
+        val fragmentManager = fragmentManager
+        val fragmentTransaction = fragmentManager!!.beginTransaction()
+        fragmentTransaction.replace(R.id.container, fragmentCheckout)
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        btn_bayar.setOnClickListener{
+            ngaleh()
+        }
 
         listAdapter = object : Adapter<ListItem, ListItemVH>(
             R.layout.item_list,
