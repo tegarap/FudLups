@@ -30,13 +30,12 @@
                   android:padding="16dp"
                   android:drawableStart="@drawable/ic_email"
                   android:drawablePadding="10dp"
-                  android:background="@drawable/et_bg"/>
+                  android:background="@drawable/et_bg_email"/>
 
         <!-- Password Label -->
         <EditText android:id="@+id/et_password"
                   android:layout_width="fill_parent"
                   android:layout_height="wrap_content"
-                  android:layout_marginTop="8dp"
                   android:inputType="textPassword"
                   android:hint="Password"
                   android:textColorHint="@color/fontForm"
@@ -44,7 +43,7 @@
                   android:padding="16dp"
                   android:drawableStart="@drawable/ic_password"
                   android:drawablePadding="10dp"
-                  android:background="@drawable/et_bg"/>
+                  android:background="@drawable/et_bg_password"/>
 
 
         <Button

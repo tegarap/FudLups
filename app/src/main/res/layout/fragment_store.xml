@@ -8,17 +8,41 @@
               android:background="@color/bg_base"
               tools:context=".fragments.StoreFragment">
 
-    <EditText android:layout_width="match_parent"
-              android:layout_height="30dp"
-              android:id="@+id/et_pencarian"
-              android:hint="search"
-              android:textColorHint="@color/fontForm"
-              android:layout_marginTop="3dp"
-              android:layout_marginLeft="5dp"
-              android:layout_marginRight="5dp"
-              android:drawableStart="@drawable/ic_search"
-              android:drawablePadding="10dp"
-              android:background="@drawable/et_pencarian"/>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bluePastel">
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="horizontal">
+            <EditText android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:id="@+id/et_pencarian"
+                      android:padding="6dp"
+                      android:hint="search"
+                      android:textColorHint="@color/fontForm"
+                      android:drawableStart="@drawable/ic_search"
+                      android:drawablePadding="10dp"
+                      android:background="@drawable/et_pencarian"
+                      app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                      app:layout_constraintTop_toTopOf="parent"
+                      android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/button"
+                      android:layout_marginTop="8dp"/>
+
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Bayar" android:id="@+id/button" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@color/colorpesan" android:layout_marginTop="6dp"/>
+        </android.support.constraint.ConstraintLayout>
+
+
+    </FrameLayout>
+
     <android.support.v7.widget.RecyclerView
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:background="@color/bg_base"
