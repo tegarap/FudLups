@@ -37,13 +37,14 @@ class ListItemVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
                 val number = Integer.parseInt(dialog.tv_stock2.text.toString()) - 1
                 if(number < 1){
                     dialog.bt_min.isEnabled = false
-                } else if(number >= 1) {
-                    dialog.bt_min.isEnabled = true
                 }
                 dialog.tv_stock2.text = number.toString()
             }
             dialog.bt_plus?.setOnClickListener {
                 val number = Integer.parseInt(dialog.tv_stock2.text.toString()) + 1
+                if(number >= 1){
+                    dialog.bt_min.isEnabled = true
+                }
                 dialog.tv_stock2.text = number.toString()
             }
 
