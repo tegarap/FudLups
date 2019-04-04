@@ -33,22 +33,27 @@ class ListItemVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
             dialog.setContentView(R.layout.fragment_popup_order)
             dialog.tv_namabarang?.text = data.name
 
-//            val stock = dialog.tv_stock2.text.toString()
-//
-//            if (stock.toInt() <= 0) {
-//                dialog.bt_min.isEnabled = false
-//                dialog.tv_stock2.text = "1"
-//            } else {
-//                dialog.bt_min.isEnabled = true
-//                dialog.bt_plus?.setOnClickListener {
-//                    val haha = stock.toInt()
-//                    haha +=1
-//                }
-//
-//            }
+            dialog.bt_min?.setOnClickListener {
+                val number = Integer.parseInt(dialog.tv_stock2.text.toString()) - 1
+                dialog.tv_stock2.text = number.toString()
+            }
+            dialog.bt_plus?.setOnClickListener {
+                val number = Integer.parseInt(dialog.tv_stock2.text.toString()) + 1
+                dialog.tv_stock2.text = number.toString()
+            }
+
+            val number = Integer.parseInt(dialog.tv_stock2.text.toString())
+            if (number < 1) {
+                dialog.bt_keranjang.setVisibility(View.GONE)
+                dialog.bt_backtomenu.setVisibility(View.VISIBLE)
+            }else if(number >= 1){
+                dialog.bt_backtomenu.setVisibility(View.GONE)
+                dialog.bt_keranjang.setVisibility(View.VISIBLE)
+            }
 
             dialog.show()
         }
+
 
     }
 

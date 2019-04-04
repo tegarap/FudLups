@@ -45,8 +45,18 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
-            android:text="Kembali ke Menu"
-            android:id="@+id/btn_backtomenu"/>
+            android:text="BackToMenu"
+            android:id="@+id/bt_backtomenu"/>
+
+    <Button android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Update Keranjang"
+            android:id="@+id/bt_keranjang"
+            android:visibility="gone"
+    />
 
 
 </LinearLayout>

@@ -1096,10 +1096,11 @@ id barrier
 id beginning
 id blocking
 id bottom
+id bt_backtomenu
+id bt_keranjang
 id bt_min
 id bt_order
 id bt_plus
-id btn_backtomenu
 id btn_login
 id buttonPanel
 id cancel_action
