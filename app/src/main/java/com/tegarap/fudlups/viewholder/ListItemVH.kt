@@ -57,7 +57,7 @@ class ListItemVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
                     dialog.bt_keranjang.text = "Add to Box - Rp. " + quan * number
                 }
                 dialog.tv_stock2.text = number.toString()
-                itemView.tv_quantity?.text = "tes " + number
+//                itemView.tv_quantity?.text = "tes " + number
             }
 
             dialog.show()
