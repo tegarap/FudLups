@@ -28,14 +28,14 @@ class ListItemVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         }
 
-        val quan = Integer.parseInt(data.price.toString())
+//        val quan = Integer.parseInt(data.price.toString())
 
         itemView.bt_order?.setOnClickListener {
 
             val dialog = Dialog(itemView.context)
             dialog.setContentView(R.layout.fragment_popup_order)
             dialog.tv_namabarang?.text = data.name + "  Rp. " + data.price
-            //val quan = Integer.parseInt(data.price.toString())
+            val quan = Integer.parseInt(data.price.toString())
 
             dialog.bt_min?.setOnClickListener {
                 val number = Integer.parseInt(dialog.tv_stock2.text.toString()) - 1
