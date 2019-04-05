@@ -1,16 +1,25 @@
 package com.tegarap.fudlups.viewholder
 
 import android.app.Dialog
+import android.graphics.Color
 import android.support.v7.widget.RecyclerView
+import android.text.style.BackgroundColorSpan
 import android.view.View
 import com.bumptech.glide.Glide
-import com.tegarap.fudlups.R
+//import com.tegarap.fudlups.R
 import com.tegarap.fudlups.models.ListItem
 import kotlinx.android.synthetic.main.fragment_popup_order.*
 import kotlinx.android.synthetic.main.item_list.view.*
 import kotlinx.android.synthetic.main.fragment_popup_order.*
 import kotlinx.android.synthetic.main.fragment_popup_order.view.*
 import kotlinx.android.synthetic.main.item_list_checkout.view.*
+import com.tegarap.fudlups.R
+import android.view.WindowManager
+import android.view.Gravity
+//import com.sun.xml.internal.ws.streaming.XMLStreamReaderUtil.getAttributes
+
+
+
 
 class ListItemVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
@@ -59,10 +68,14 @@ class ListItemVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
                 dialog.tv_stock2.text = number.toString()
 //                itemView.tv_quantity?.text = "tes " + number
             }
+            val window = dialog.getWindow()
+            val wlp = window.getAttributes()
 
+            wlp.gravity = Gravity.BOTTOM
+            wlp.flags = wlp.flags and WindowManager.LayoutParams.FLAG_DIM_BEHIND.inv()
+            window.setAttributes(wlp)
             dialog.show()
         }
-//        itemView.bt_keranjang
 
     }
 

@@ -20,9 +20,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.tegarap.fudlups.activities.CheckoutActivity" >
-        </activity>
-        <activity android:name="com.tegarap.fudlups.activities.MainActivity" >
+        <activity
+            android:name="com.tegarap.fudlups.activities.MainActivity"
+            android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity android:name="com.tegarap.fudlups.activities.LoginActivity" >
             <intent-filter>
